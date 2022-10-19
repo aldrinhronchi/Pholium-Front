@@ -6,6 +6,8 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import {RouterModule} from '@angular/router';
 import { ProjectsComponent } from './projects/projects.component';
 import { FooterBarComponent } from './footer-bar/footer-bar.component';
+import { CurriculumComponent } from './curriculum/curriculum.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -13,13 +15,17 @@ import { FooterBarComponent } from './footer-bar/footer-bar.component';
     NavMenuComponent,
     ProjectsComponent,
     HomeComponent,
-    FooterBarComponent
+    FooterBarComponent,
+    CurriculumComponent,
+    ContactComponent
   ],
     imports: [
         BrowserModule,
       RouterModule.forRoot([
         { path: '', component: HomeComponent, pathMatch: 'full' },
         { path: 'projects', component: ProjectsComponent },
+        { path: 'curriculum', component: CurriculumComponent },
+        { path: 'contact', component: ContactComponent },
       ])
     ],
   providers: [],
