@@ -6,10 +6,31 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
-
+  sector: any;
+  sectorLink: any;
   constructor() { }
 
   ngOnInit() {
   }
+  changeModal(index: number) {
+    console.log(index);
+    switch (index) {
+      case 1:
+      {
+        this.sector = 'crud';
+        break;
+      }
+      case 2:
+      {
+        this.sector = 'curriculum';
+        break;
+      }
+      default: {
+        this.sector = '';
+        break;
+      }
 
+
+    }
+}
 }

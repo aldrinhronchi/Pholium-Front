@@ -8,6 +8,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { FooterBarComponent } from './footer-bar/footer-bar.component';
 import { CurriculumComponent } from './curriculum/curriculum.component';
 import { ContactComponent } from './contact/contact.component';
+import { CrudComponent } from './projects/crud/crud.component';
+import { ModalinfoComponent } from './projects/modalinfo/modalinfo.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { ContactComponent } from './contact/contact.component';
     HomeComponent,
     FooterBarComponent,
     CurriculumComponent,
-    ContactComponent
+    ContactComponent,
+    CrudComponent,
+    ModalinfoComponent
   ],
     imports: [
         BrowserModule,
@@ -26,6 +30,7 @@ import { ContactComponent } from './contact/contact.component';
         { path: 'projects', component: ProjectsComponent },
         { path: 'curriculum', component: CurriculumComponent },
         { path: 'contact', component: ContactComponent },
+        { path: 'crud', component: CrudComponent },
       ])
     ],
   providers: [],
