@@ -1,6 +1,12 @@
+h1, p {
+  color: #fff !important;
+}
+
+
 .img-container {
   height: auto;
   width: 100%;
   background-size:cover;
 }
+
 
