@@ -11,8 +11,8 @@ export class ModalinfoComponent implements OnInit {
   img2: any = 'assets/img/nature/image2.jpg';
   img3: any = 'assets/img/nature/image3.jpg';
   imagesSlides: any[] = [this.img1, this.img2, this.img3];
-  title: string = 'Title';
-  text1: string = 'Wow so much Text!';
+  title = 'Title';
+  text1 = 'Wow so much Text!';
   constructor() { }
 
   ngOnInit() {
@@ -24,6 +24,13 @@ export class ModalinfoComponent implements OnInit {
         this.img1 = 'assets/img/tech/image4.jpg';
         this.title = 'Bootleg Items CRUD';
         this.text1 = 'CRUD of Bootleg Items';
+
+        break;
+      }
+      case 'utils': {
+        this.img1 = 'assets/img/tech/image6.png';
+        this.title = 'Utilities';
+        this.text1 = 'Some easy app-like functions, that i use a lot!';
 
         break;
       }

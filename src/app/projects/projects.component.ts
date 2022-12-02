@@ -25,6 +25,11 @@ export class ProjectsComponent implements OnInit {
         this.sector = 'curriculum';
         break;
       }
+      case 3:
+      {
+        this.sector = 'utils';
+        break;
+      }
       default: {
         this.sector = '';
         break;
